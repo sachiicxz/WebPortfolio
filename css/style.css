@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* General Navbar Styling */
+.navbar {
+    padding: 20px 30px;
+    background-color: #020220;
+    font-size: 20px;
+    height: 80px;
+}
+
+.navbar-brand h5 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar span {
+    color: #4e9eff;
+}
+
+.navbar-brand span {
+    color: #4e9eff;
+    font-weight: bold;
+    align-items: center;
+}
+
+.button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    margin-top: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Container Fix */
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Cards Styling */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.card-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cards-container .card img {
+    height: auto;
+    /* Control image size */
+    object-fit: cover;
+    /* Prevent distortion */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Screens (up to 768px) */
+@media screen and (max-width: 425px) {
+    .navbar {
+        padding: 15px 20px;
+        font-size: 16px;
+        height: auto;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100% !important;
+        /* Ensures it stays inside the viewport */
+        max-width: 280px;
+        margin-bottom: 30px;
+        /* More spacing for mobile */
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    .cards-container {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 30px;
+        /* More spacing for tablet */
+    }
+}
+
+/* Large Screens (1025px+) */
+@media screen and (min-width: 1025px) {
+    .card {
+        width: 18rem;
+    }
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: end;
+        background-color: #0d0d2b;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0.5;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+.button {
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
