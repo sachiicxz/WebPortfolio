@@ -464,6 +464,7 @@ section {
 
 .certs .card-title {
     font-weight: bold;
+    font-size: 13px;
 }
 
 /* Responsive Design */
@@ -480,7 +481,7 @@ section {
     }
 
     .card-title {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .modal-title {
@@ -725,6 +726,10 @@ section {
     }
 
     .card-footer{
+        font-size: 9px;
+    }
+
+    .certs .card-title {
         font-size: 9px;
     }
 }
