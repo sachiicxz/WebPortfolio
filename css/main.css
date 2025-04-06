@@ -8,6 +8,41 @@
 }
 
 /* General Navbar Styling */
+.custom-toggler {
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    z-index: 1051;
+    /* So it stays above the menu */
+}
+
+.custom-toggler .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+}
+
+.custom-toggler.active .top-bar {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.custom-toggler.active .middle-bar {
+    opacity: 0;
+}
+
+.custom-toggler.active .bottom-bar {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+
 .navbar {
     padding: 20px 30px;
     background-color: #020220;
@@ -185,7 +220,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(146, 146, 206);
     transition: transform 0.3s ease, color 0.3s ease;
     font-size: 19px;
     width: 50px;
@@ -399,7 +434,207 @@ section {
 /*quizes style*/
 
 .quizes {
+    background-color: #1a1a2e;
+}
+
+/*skills styling*/
+#skills {
     background-color: #0d0d2b;
+}
+
+/*skills container style*/
+.skills-container {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.skills-container .skill-card {
+    position: relative;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.skills-container .skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skills-container .skill-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+
+.percent .num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .num h2 {
+    color: #777;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.skill-card:hover .percent .num h2 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.percent .num h2 span {
+    color: #777;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.skill-card:hover .percent .num h2 span {
+    color: #fff;
+}
+
+.text {
+    position: relative;
+    color: #8f8f8f;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.skill-card:hover .text {
+    color: white;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle {
+    width: 90%;
+    height: 100%;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.skill-card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #00ff43;
+}
+
+.skill-card:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    stroke: #2196f3;
+}
+
+.skill-card:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 40) / 100);
+    stroke: #ff9800;
+}
+
+.skill-card:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 35) / 100);
+    stroke: #f44336;
+}
+
+/*responsive style*/
+@media (max-width: 992px) {
+    .skills-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .skills-container .skill-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 10px;
+        gap: 5px;
+    }
+
+    .skills-container .skill-card {
+        width: 70%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .percent {
+        width: 150px;
+        height: 150px;
+    }
+
+    svg {
+        width: 130%;
+        height: 130%;
+    }
+
+    .percent .num h2 {
+        font-size: 24px;
+    }
+
+    .skill-card:hover .percent .num h2 {
+        font-size: 32px;
+    }
+
+    .percent .num h2 span {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 16px;
+        margin-top: 15px;
+    }
 }
 
 /* Centering the section */
@@ -409,13 +644,13 @@ section {
     padding: 20px;
     text-align: center;
 }
-.card-footer{
+
+.card-footer {
     font-weight: bold;
     cursor: pointer;
-   
+
 }
 
-/* Cards Container */
 /* Cards Container */
 .cards-container {
     display: flex;
@@ -425,8 +660,8 @@ section {
 }
 
 /* Cards Styling */
-.card {
-    background: white;
+card {
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -446,7 +681,7 @@ section {
 .card img {
     width: 100%;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .card:hover {
@@ -507,12 +742,12 @@ section {
 
 /*contact style*/
 .contact {
-    background-color: #1a1a2e;
+    background-color: #0d0d2b;
     min-height: 490px;
 }
 
 .contact .paragraph-text {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .feedback-container .form-control {
@@ -725,7 +960,7 @@ section {
         word-spacing: 1px;
     }
 
-    .card-footer{
+    .card-footer {
         font-size: 9px;
     }
 
