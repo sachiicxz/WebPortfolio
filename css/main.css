@@ -632,7 +632,7 @@ section {
 /* Optional adjustments for the cards */
 /*contact style*/
 .contact {
-    background-color: #0d0d2b;
+    background-color: #1a1a2e;
     min-height: 490px;
 }
 
@@ -821,3 +821,4 @@ section {
         width: 15rem;
     }
 }
+
