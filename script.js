@@ -92,3 +92,42 @@ document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
         toggler.classList.remove('active');
     });
 });
+
+function animateCard(cardId, animation) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+
+    card.classList.add('animate__animated', animation);
+
+    // Remove animation class after animation ends
+    card.addEventListener('animationend', () => {
+        card.classList.remove('animate__animated', animation);
+    }, { once: true });
+}
+
+//cards anmations
+document.getElementById("cisco1-card").addEventListener("click", () => {
+    animateCard("cisco1-card", "animate__bounce");
+});
+document.getElementById("cisco2-card").addEventListener("click", () => {
+    animateCard("cisco2-card", "animate__pulse");
+});
+document.getElementById("cisco3-card").addEventListener("click", () => {
+    animateCard("cisco3-card", "animate__rubberBand");
+});
+document.getElementById("cisco4-card").addEventListener("click", () => {
+    animateCard("cisco4-card", "animate__shakeX");
+});
+
+document.getElementById("html-card").addEventListener("click", () => {
+    animateCard("html-card", "animate__bounce");
+});
+document.getElementById("css-card").addEventListener("click", () => {
+    animateCard("css-card", "animate__pulse");
+});
+document.getElementById("js-card").addEventListener("click", () => {
+    animateCard("js-card", "animate__rubberBand");
+});
+document.getElementById("bootstrap-card").addEventListener("click", () => {
+    animateCard("bootstrap-card", "animate__shakeX");
+});
