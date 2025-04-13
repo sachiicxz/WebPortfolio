@@ -361,7 +361,7 @@ section {
     border-radius: 5px;
     text-align: center;
     border: white 1px solid;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
@@ -429,133 +429,202 @@ section {
 /*skills styling*/
 #skills {
     background-color: #0d0d2b;
+    padding: 40px 0;
 }
 
-
-/*skills container style*/
-.skill-icon {
-    margin-top: 10%;
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    display: inline-block;
+.skills-card {
+    perspective: 1000px;
+    height: 250px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
-.skill-icon:hover {
-    animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-    30% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.15);
-    }
-
-    100% {
-        transform: scale(1.20);
-    }
-}
-
-
-.skills-container .skills-card {
-    background-color: rgb(202, 202, 202);
-    transition: transform 0.3s ease-in-out;
-    border: 2px solid black;
-    color: black;
-    width: 107%;
+.flip-inner {
+    position: relative;
+    width: 100%;
     height: 100%;
-    margin-top: 10%;
-    border-radius: 10px;
-    padding: 10px 20px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
 }
 
-.skills-card:hover {
-    transform: scale(1.05);
+
+/* Flip on class toggle (for mobile) */
+.skills-card.flipped .flip-inner {
+    transform: rotateY(180deg);
 }
 
-.skills .card-title {
+/* Flip on hover (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+    .skills-card:hover .flip-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+.xp-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #222;
+    border: 1px solid #0d0d2b;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+}
+
+.xp-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #1a1a2e, #4e9eff);
+    width: 0%; 
+    transition: width 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.xp-label {
+    text-shadow: 0 0 3px #00ffcc;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-front {
+    z-index: 2;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: #f5f5f5;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+}
+
+.card-title {
     font-size: 16px;
     font-weight: bold;
-    margin-top: 20px;
+    color: #0d0d2b;
+    margin-bottom: 10px;
 }
 
-.skills .card-text {
+.card-text {
     font-size: 13px;
-    margin-top: 15px;
+    color: #333;
     text-align: justify;
 }
 
-/*responsive style*/
-
-/* For extra small screens: 320px and below */
+/* Extra small screens: phones, up to 360px */
 @media (max-width: 360px) {
     .skill-icon {
         width: 30px;
-        height: 25px;
-        margin-top: 5%;
+        height: 30px;
+        margin-bottom: 10px;
     }
 
-    .skills-container .skills-card {
-        width: 100%;
-        margin: 10px auto;
-        padding: 10px;
+    .skills-card {
+        height: 200px;
     }
 
-    .skills .card-title {
-        font-size: 9px;
-        margin-top: 10px;
+    .card-title {
+        font-size: 11px;
     }
 
-    .skills .card-text {
-        font-size: 8px;
+    .card-text {
+        font-size: 12px;
+        line-height: 1.2;
     }
 }
 
-/* For medium screens: tablets or larger phones */
+/* Medium screens: 361px - 768px (tablets or larger phones) */
 @media (min-width: 361px) and (max-width: 768px) {
     .skill-icon {
         width: 40px;
         height: 40px;
+        margin-bottom: 10px;
     }
 
-    .skills-container .skills-card {
-        width: 100%;
-        padding: 15px;
+    .skills-card {
+        height: 150px;
     }
 
-    .skills .card-title {
-        font-size: 10px;
+
+    .card-title {
+        font-size: 13px;
     }
 
-    .skills .card-text {
-        font-size: 10px;
+    .card-text {
+        font-size: 11px;
+        line-height: 1.3;
     }
 }
 
-/* For larger screens (desktops and above) */
+/* Large screens: 769px and up (desktops) */
 @media (min-width: 769px) {
     .skill-icon {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
     }
 
-    .skills-container .skills-card {
-        width: 100%;
-        max-width: 250px;
-        padding: 20px;
+    .skills-card {
+        height: 200px;
     }
 
-    .skills .card-title {
+    .card-title {
         font-size: 16px;
     }
 
-    .skills .card-text {
-        font-size: 14px;
+    .card-text {
+        font-size: 10px;
+        line-height: 1.4;
     }
 }
+
+@media (max-width: 768px) {
+    .xp-bar {
+      height: 9px;
+    }
+  
+    .xp-fill {
+      font-size: 8px;
+      padding-right: 3px;
+    }
+  
+    .xp-label {
+      text-shadow: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .xp-bar {
+      height: 7px;
+    }
+  
+    .xp-fill {
+      font-size: 7px;
+    }
+  }
+  
 
 /* Centering the section */
 .container {
@@ -632,7 +701,7 @@ section {
 /* Optional adjustments for the cards */
 /*contact style*/
 .contact {
-    background-color: #1a1a2e;
+    background-color: #0d0d2b;
     min-height: 490px;
 }
 
@@ -733,7 +802,7 @@ section {
 
     .list-text span {
         width: 20%;
-        font-size: 9px;
+        font-size: 5px;
     }
 
     .button {
@@ -821,4 +890,3 @@ section {
         width: 15rem;
     }
 }
-
