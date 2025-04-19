@@ -37,10 +37,19 @@
     <section class="scores" id="scores">
         <div class="container mb-5">
             <div class="row">
-                <a href="index.html">
-                    <button class="button"><i class="bi bi-backspace-fill"></i> BACK</button>
-                </a>
+                <div class="col-6">
+                    <a href="index.html">
+                        <button class="button"><i class="bi bi-arrow-left-circle-fill"></i> HOME</button>
+                    </a>
+                </div>
+
+                <div class="col-6 text-end">
+                    <a href="quiz-post-test.html">
+                        <button class="button"><i class="bi bi-arrow-right-circle-fill"></i> NEXT</button>
+                    </a>
+                </div>
             </div>
+
             <!-- Section Title -->
             <div class="text-center">
                 <h3 class="fw-bold text-white animate__animated animate__fadeInUp">PRE-TESTS</h3>
@@ -62,18 +71,15 @@
                             <img src="quizzes/PT3.png" class="card-img-top" alt="pre-test">
                         </div>
                     </div>
-
                 </div>
 
-
-                <div class="row mt-2">
+                <div class="row">
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header">PRE-TEST 4</div>
                             <img src="quizzes/PT4.png" class="card-img-top" alt="pre-test">
                         </div>
                     </div>
-
 
                     <div class="col-md-6">
                         <div class="card">
@@ -85,25 +91,6 @@
             </div>
         </div>
     </section>
-
-    <button id="scrollToTop" class="scroll-to-top">&#8679;</button>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let scrollToTopBtn = document.getElementById("scrollToTop");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 200) { // Show when scrolled 200px
-                    scrollToTopBtn.style.display = "flex";
-                } else {
-                    scrollToTopBtn.style.display = "none";
-                }
-            });
-
-            scrollToTopBtn.addEventListener("click", function () {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-        });
-    </script>
 </body>
 
 </html>
