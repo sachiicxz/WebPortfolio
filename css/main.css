@@ -349,7 +349,7 @@ section {
 .projects .list-text {
     text-align: center;
     color: white;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .list-text span {
@@ -434,6 +434,7 @@ section {
 .skills-card {
     perspective: 1000px;
     height: 250px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
