@@ -105,25 +105,6 @@
             </div>
         </div>
     </section>
-
-    <button id="scrollToTop" class="scroll-to-top">&#8679;</button>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let scrollToTopBtn = document.getElementById("scrollToTop");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 200) { // Show when scrolled 200px
-                    scrollToTopBtn.style.display = "flex";
-                } else {
-                    scrollToTopBtn.style.display = "none";
-                }
-            });
-
-            scrollToTopBtn.addEventListener("click", function () {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-        });
-    </script>
 </body>
 
 </html>
