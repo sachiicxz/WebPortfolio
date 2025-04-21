@@ -556,7 +556,7 @@ section {
 }
 
 /* Large screens: 769px and up (desktops) */
-@media (min-width: 769px) {
+@media (min-width: 320px) {
     .skill-icon {
         width: 50px;
         height: 50px;
@@ -750,11 +750,6 @@ section {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-    }
-
-    .list-text span {
-        width: 20%;
-        font-size: 5px;
     }
 
     .button {
