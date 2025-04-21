@@ -450,7 +450,7 @@ section {
 
 .xp-fill {
     height: 100%;
-    background: linear-gradient(90deg, #1a1a2e, #4e9eff);
+    background: linear-gradient(90deg, #1a1a2e, #020220);
     width: 0%;
     transition: width 1s ease-in-out;
     display: flex;
@@ -510,7 +510,6 @@ section {
     text-align: justify;
 }
 
-/* Extra small screens: phones, up to 360px */
 
 /* Medium screens: 361px - 768px (tablets or larger phones) */
 @media (min-width: 361px) and (max-width: 768px) {
@@ -572,15 +571,6 @@ section {
     }
 }
 
-@media (max-width: 480px) {
-    .xp-bar {
-        height: 7px;
-    }
-
-    .skills-car .xp-fill {
-        font-size: 5px;
-    }
-}
 
 
 /* Centering the section */
