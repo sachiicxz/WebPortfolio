@@ -511,26 +511,6 @@ section {
 }
 
 /* Extra small screens: phones, up to 360px */
-@media (max-width: 360px) {
-    .skill-icon {
-        width: 30px;
-        height: 30px;
-        margin-bottom: 10px;
-    }
-
-    .skills-card {
-        height: 200px;
-    }
-
-    .card-title {
-        font-size: 11px;
-    }
-
-    .card-text {
-        font-size: 12px;
-        line-height: 1.2;
-    }
-}
 
 /* Medium screens: 361px - 768px (tablets or larger phones) */
 @media (min-width: 361px) and (max-width: 768px) {
@@ -541,7 +521,7 @@ section {
     }
 
     .skills-card {
-        height: 150px;
+        height: 100%;
     }
 
 
@@ -582,7 +562,7 @@ section {
         height: 9px;
     }
 
-    .xp-fill {
+    .skills-card .xp-fill {
         font-size: 5px;
         padding-right: 3px;
     }
@@ -597,7 +577,7 @@ section {
         height: 7px;
     }
 
-    .xp-fill {
+    .skills-car .xp-fill {
         font-size: 5px;
     }
 }
@@ -791,7 +771,7 @@ section {
         font-size: 15px;
     }
 
-    .quizes .card-footer {
+    #quizes .card-container .card-footer {
         font-size: 5px;
     }
 
@@ -816,7 +796,8 @@ section {
     }
 
     .quizes .card-container {
-        padding-right: 10px;
+        padding-right: 13px;
+        gap: 2px;
     }
 
     .card-text {
