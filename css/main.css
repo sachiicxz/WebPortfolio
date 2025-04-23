@@ -450,7 +450,7 @@ section {
 
 .xp-fill {
     height: 100%;
-    background: linear-gradient(90deg, #1a1a2e, #020220);
+    background: linear-gradient(90deg, #1a1a2e, #4e9eff);
     width: 0%;
     transition: width 1s ease-in-out;
     display: flex;
@@ -458,7 +458,7 @@ section {
     justify-content: flex-end;
     padding-right: 5px;
     font-size: 9px;
-    color: #fff;
+    color: white;
     white-space: nowrap;
 }
 

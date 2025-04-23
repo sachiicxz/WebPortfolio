@@ -90,8 +90,18 @@
     transform: scale(1.05);
 }
 
+.scores .modal-content {
+    background-color: #0d0d2b;
+}
+
+.scores .modal-title {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
 /* Mobile Screens (up to 768px) */
-@media screen and (max-width: 425px) {
+@media (min-width: 320px) {
     .navbar {
         padding: 15px 20px;
         font-size: 16px;
@@ -105,34 +115,54 @@
     .cards-container {
         flex-direction: column;
         align-items: center;
+        padding-right: 10px;
     }
 
     .card {
-        width: 100% !important;
-        /* Ensures it stays inside the viewport */
-        max-width: 280px;
-        margin-bottom: 30px;
-        /* More spacing for mobile */
+        width: 115%;
+        gap: 2px;
+        margin-top: 10px;
+    }
+
+    .card-header {
+        font-size: 6px;
+    }
+
+    .container h3 {
+        font-size: 20px;
     }
 }
 
 /* Tablets (769px - 1024px) */
-@media screen and (min-width: 750px) and (max-width: 1024px) {
+@media (min-width: 750px) and (max-width: 1024px) {
     .cards-container {
         justify-content: space-around;
+        margin-top: 10px;
+
     }
 
     .card {
-        width: 45%;
-        margin-bottom: 30px;
-        /* More spacing for tablet */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .modal-title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card-header {
+        font-size: 14px;
     }
 }
 
-/* Large Screens (1025px+) */
 @media screen and (min-width: 1025px) {
     .card {
         width: 18rem;
+    }
+
+    .card-header {
+        font-size: 15px;
     }
 }
 
@@ -149,4 +179,3 @@
         width: 100%;
     }
 }
-
