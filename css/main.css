@@ -614,6 +614,7 @@ section {
     flex-wrap: wrap;
     margin-top: 10%;
     justify-content: center;
+    gap: 5px; 
 }
 
 /* Cards Styling */
@@ -622,6 +623,24 @@ section {
     height: auto;
     object-fit: cover;
 }
+
+.card-container .card {
+    width: 14rem; 
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        justify-content: center;
+    }
+
+    .card-container .card {
+        width: 100%;
+        margin-bottom: 10%;
+        gap: 2px;
+    }
+}
+
 
 .card:hover {
     transform: scale(1.05);
@@ -776,20 +795,11 @@ section {
     .certs .cert-card {
         width: 100%;
     }
+
 }
 
 /* Responsive Design */
 @media screen and (max-width: 600px) {
-    .card {
-        width: 120%;
-        height: auto;
-    }
-
-    .quizes .card-container {
-        padding-right: 13px;
-        gap: 2px;
-    }
-
     .card-text {
         font-size: 8px;
     }

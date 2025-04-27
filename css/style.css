@@ -100,6 +100,37 @@
     color: white;
 }
 
+#projectCarousel {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+#projectCarouselTwo {
+    max-height: 800px;
+    object-fit: contain;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.carousel-caption {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 550px) {
+    .carousel-caption p {
+        font-size: 6px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 8px;
+    }
+}
+
 /* Mobile Screens (up to 768px) */
 @media (min-width: 320px) {
     .navbar {
@@ -130,6 +161,9 @@
 
     .container h3 {
         font-size: 20px;
+    }
+    .btn-primary {
+        font-size: 13px;
     }
 }
 
