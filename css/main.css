@@ -366,12 +366,26 @@ section {
     background-color: #1a1a2e;
 }
 
+
+.code {
+    text-decoration: none;
+    text-align: center;
+}
+
+.to-do-lidt{
+
+}
 #projectCarousel {
     max-height: 500px;
     object-fit: contain;
 }
 
 #projectCarouselTwo {
+    max-height: 800px;
+    object-fit: contain;
+}
+
+#projectCarouselThree {
     max-height: 800px;
     object-fit: contain;
 }
@@ -614,7 +628,7 @@ section {
     flex-wrap: wrap;
     margin-top: 10%;
     justify-content: center;
-    gap: 5px; 
+    gap: 5px;
 }
 
 /* Cards Styling */
@@ -625,7 +639,7 @@ section {
 }
 
 .card-container .card {
-    width: 14rem; 
+    width: 14rem;
 }
 
 /* Media Query for smaller screens */

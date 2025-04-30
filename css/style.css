@@ -117,6 +117,9 @@
     object-fit: contain;
 }
 
+.btn-primary{
+    text-decoration: none;
+}
 .carousel-caption {
     font-size: 0.8rem;
 }
