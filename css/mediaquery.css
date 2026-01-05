@@ -1,0 +1,266 @@
+/* Responsive Styling */
+/* MOBILE NAV MENU FIX */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: transparent;
+        backdrop-filter: blur(12px);
+        border-radius: 14px;
+        padding: 20px;
+        margin-top: 12px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff !important;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link::after {
+        background: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .media-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .media-icons a {
+        font-size: 18px;
+        width: 20px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Additional Adjustments for Smaller Screens */
+@media (max-width: 425px) {
+    .media-icons {
+        gap: 5px;
+    }
+
+    .media-icons a {
+        font-size: 19px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@keyframes dropFromTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*text animations*/
+@keyframes text-move {
+
+    0%,
+    15% {
+        margin-top: 0px;
+    }
+
+    25%,
+    40% {
+        margin-top: -70px;
+    }
+
+    50%,
+    65% {
+        margin-top: -140px;
+    }
+
+    75%,
+    90% {
+        margin-top: -70px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+/* Medium screens: 361px - 768px (tablets or larger phones) */
+@media (min-width: 361px) and (max-width: 768px) {
+
+
+    .card-title {
+        font-size: 13px;
+    }
+
+    .card-text {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+}
+
+/* Large screens: 769px and up (desktops) */
+@media (min-width: 320px) {
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .skills-card {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        justify-content: center;
+    }
+
+    .card-container .card {
+        width: 100%;
+        margin-bottom: 10%;
+        gap: 2px;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    .profile-img {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .about .img-card img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .button {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hire-btn {
+        width: 50%;
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 9px;
+    }
+
+    .main .content h2 {
+        font-size: 1.1rem;
+    }
+
+    .animated-text h3 {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 8px;
+    }
+
+    .paragraph-text {
+        flex-grow: 1;
+        text-align: justify;
+        word-spacing: 1px;
+        font-size: 15px;
+    }
+
+    .certs .card-title {
+        font-size: 9px;
+    }
+
+    .certs .card-text {
+        font-size: 7px;
+    }
+
+    .certs .cert-card {
+        width: 100%;
+    }
+
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .card-text {
+        font-size: 8px;
+    }
+
+    .card-title {
+        font-size: 10px;
+    }
+
+    .modal-title {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+/* Desktop: Standard sizing */
+@media screen and (min-width: 1025px) {
+    .card {
+        width: 15rem;
+    }
+}

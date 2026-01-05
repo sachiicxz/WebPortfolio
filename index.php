@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="about/ID1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css for Smooth Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+</head>
+
+<style>
+    body {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <!-- Logo and Brand -->
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.php">
+                <h5>MY <span>PORTFOLIO</span></h5>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="bar top-bar"></span>
+                <span class="bar middle-bar"></span>
+                <span class="bar bottom-bar"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInRight"
+                            href="index.php">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInLeft"
+                            href="works.php">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInRight"
+                            href="skills.php">SKILLS</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInRight"
+                            href="contact.php">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main" id="main">
+        <div class="container-fluid">
+            <div class="row main-section">
+                <!-- Left Content -->
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <div class="content">
+                        <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                            Hello, I'm <br><span>Divina Gracia</span>
+                        </h2>
+                        <div class="animated-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                            <h3>IT Support</h3>
+                            <h3>Web Designer</h3>
+                            <h3>Data Analyst</h3>
+                        </div>
+
+                        <div class="resume mt-4">
+                            <a href="about/Curriculum Vitae.pdf" download="divina-gracia-corroz-cv.pdf"
+                                class="button">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-12 col-md-6 text-center mt-4 mt-md-0" data-bs-toggle="tooltip" title="That's Me!">
+                    <img src="about/ID1.png" alt="Profile Image" class="profile-img img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h3 class="fw-bold text-white">ABOUT ME</h3>
+                <hr class="mx-auto" style="height: 3px; background-color: white; width: 65px; margin-bottom: 3%;">
+            </div>
+
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <div class="img-card" data-bs-toggle="tooltip" title="That's Me!">
+                        <img src="about/ID1.png" class="img-fluid" alt="My Photo">
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <h2 class="content-title text-white mb-3">
+                        Hey There! <br>
+                        I am <span class="highlight-name">Divina Gracia Corroz</span>
+                    </h2>
+
+                    <p class="paragraph-text text-white">
+                        I’m a 21-year-old third year BSIT student at Cavite State University – Silang Campus.
+                        I’m passionate about <b>IT support</b>, <b>web design</b>, and <b>cybersecurity</b>.
+                        <br><br>
+                        Technology fascinates me, especially creating secure, efficient, and visually engaging digital
+                        experiences. I enjoy learning new tools and constantly improving my skills.
+                        <br><br>
+                        As I continue my academic journey, I’m excited to gain hands-on experience and collaborate on
+                        meaningful projects that help me grow in the IT field.
+                    </p>
+
+                    <div class="about-actions d-flex gap-3 mt-4">
+
+                        <a href="works.php">
+                            View Projects
+                        </a>
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=corrozdivina14@gmail.com"
+                            target="_blank">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="certs" id="achievements">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h3 class="fw-bold text-white">My Achievements</h3>
+                <hr class="mx-auto" style="height: 3px; background-color: white; width: 65px; margin-bottom: 3%;">
+
+                <p class="text-white mt-5">
+                    I have earned Cisco certifications that demonstrate my foundational knowledge in IT and networking.
+                    These certifications reflect my technical skills, dedication to learning, and commitment to
+                    continuously improving my understanding of networking concepts and IT support
+                    <!-- Certificate Cards -->
+                <div class="row g-4">
+
+                    <div class="col-6 col-md-3">
+                        <div class="cert-card" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                            <img src="certs/p1.png" alt="Cisco Certificate">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="cert-card" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                            <img src="certs/p2.png" alt="Cisco Certificate">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="cert-card" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                            <img src="certs/p3.png" alt="Cisco Certificate">
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-md-3">
+                        <div class="cert-card" data-bs-toggle="modal" data-bs-target="#imageModal4">
+                            <img src="certs/p4.png" alt="Cisco Certificate">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Image Popup -->
+                <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="imageModalLabel">Introduction to Packet Tracer Exam</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> <img src="certs/p1.png" class="img-fluid rounded"
+                                    alt="Full-size Image"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="imageModalLabel">IT Costumer Support Basics</h5> <button
+                                    type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> <img src="certs/p2.png" class="img-fluid rounded"
+                                    alt="Full-size Image"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="imageModalLabel">Introduction to Packet Tracer</h5> <button
+                                    type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> <img src="certs/p3.png" class="img-fluid rounded"
+                                    alt="Full-size Image"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="imageModalLabel">IT Costumer Support Basics Course</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> <img src="certs/p4.png" class="img-fluid rounded"
+                                    alt="Full-size Image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Footer Top -->
+            <div class="footer-top">
+
+                <!-- Left: Branding -->
+                <div class="footer-brand">
+                    <h4>Divina Gracia Corroz</h4>
+                    <p>BSIT Student</p>
+                </div>
+
+                <div class="footer-links">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="index.php">About</a></li>
+                        <li><a href="works.php">Works</a></li>
+                        <li><a href="skills.php">Skills</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-contact">
+                    <h6>Let's Work Together</h6>
+                    <div class="media-icons">
+                        <a href="https://facebook.com/riyuuio" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com/sachiiczx" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com/sachiicxz" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://github.com/sachiicxz" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/divina-gracia-corroz-a0b0732bb/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=corrozdivina14@gmail.com" target="_blank">
+                        <button class="hire-btn">Hire Me</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Bottom -->
+        <div class="footer-bottom text-center">
+            <p>&copy; 2025 my_portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

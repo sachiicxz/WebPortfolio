@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="about/ID1.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
+
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css for Smooth Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+</head>
+
+<style>
+  body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <!-- Logo and Brand -->
+      <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.php">
+        <h5>MY <span>PORTFOLIO</span></h5>
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar top-bar"></span>
+        <span class="bar middle-bar"></span>
+        <span class="bar bottom-bar"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link animate__animated animate__fadeInRight" href="index.php">HOME</a></li>
+          <li class="nav-item"><a class="nav-link animate__animated animate__fadeInLeft" href="works.php">WORKS</a></li>
+          <li class="nav-item"><a class="nav-link animate__animated animate__fadeInRight" href="skills.php">SKILLS</a>
+          </li>
+          <li class="nav-item"><a class="nav-link animate__animated animate__fadeInRight" href="contact.php">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- SKILLS SECTION -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+
+      <!-- Title -->
+      <div class="text-center mb-5">
+        <h3 class="fw-bold text-white">MY SKILLS</h3>
+        <hr class="mx-auto" style="height:3px;width:70px;background:#fff;">
+
+        <p class="text-white mt-5">
+          Tools and technologies I use to design, build, and improve digital experiences.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- HTML -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/icons8-html-50.png" alt="HTML">
+            <h6>HTML</h6>
+            <p>Semantic markup and clean structure for modern web pages.</p>
+            <div class="skill-tags">
+              <span>Accessibility</span>
+              <span>SEO-ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/icons8-css-64.png" alt="CSS">
+            <h6>CSS</h6>
+            <p>Responsive layouts, animations, and modern UI styling.</p>
+            <div class="skill-tags">
+              <span>Flexbox</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/icons8-js-48.png" alt="JavaScript">
+            <h6>JavaScript</h6>
+            <p>Basic interactivity, DOM manipulation, and UI behavior.</p>
+            <div class="skill-tags">
+              <span>DOM</span>
+              <span>Events</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/icons8-bootstrap-48.png" alt="Bootstrap">
+            <h6>Bootstrap</h6>
+            <p>Fast development of responsive and consistent layouts.</p>
+            <div class="skill-tags">
+              <span>Grid</span>
+              <span>Components</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Canva -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/Canva.png" alt="Canva">
+            <h6>Canva Design</h6>
+            <p>Visual design for presentations, posters, and social media.</p>
+            <div class="skill-tags">
+              <span>Branding</span>
+              <span>Layouts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI/UX -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/UI.jpg" alt="UI UX">
+            <h6>UI / UX Design</h6>
+            <p>Designing intuitive interfaces with user flow in mind.</p>
+            <div class="skill-tags">
+              <span>Wireframes</span>
+              <span>User Flow</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Git / Version Control -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/GIT.png" alt="Git">
+            <h6>Git & GitHub</h6>
+            <p>Version control and project collaboration.</p>
+            <div class="skill-tags">
+              <span>Commits</span>
+              <span>Repos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem Solving -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <img src="icons/PS.png" alt="Problem Solving">
+            <h6>Problem Solving</h6>
+            <p>Breaking down problems and finding practical solutions.</p>
+            <div class="skill-tags">
+              <span>Debugging</span>
+              <span>Logic</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+
+      <!-- Footer Top -->
+      <div class="footer-top">
+
+        <!-- Left: Branding -->
+        <div class="footer-brand">
+          <h4>Divina Gracia Corroz</h4>
+          <p>BSIT Student</p>
+        </div>
+
+        <div class="footer-links">
+          <h6>Quick Links</h6>
+          <ul>
+            <li><a href="index.php">About</a></li>
+            <li><a href="works.php">Works</a></li>
+            <li><a href="skills.php">Skills</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-contact">
+          <h6>Let's Work Together</h6>
+          <div class="media-icons">
+            <a href="https://facebook.com/riyuuio" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/sachiiczx" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/sachiicxz" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://github.com/sachiicxz" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/divina-gracia-corroz-a0b0732bb/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=corrozdivina14@gmail.com" target="_blank">
+            <button class="hire-btn">Hire Me</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Bottom -->
+    <div class="footer-bottom text-center">
+      <p>&copy; 2025 my_portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
