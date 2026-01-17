@@ -1,11 +1,18 @@
+#project {
+  background-color: #ffbacc;
+  position: relative;
+  overflow: hidden;
+}
+
 /*PROJECTS STYLE*/
 .project-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.85),
+      rgba(226, 115, 163, 0.6));
   backdrop-filter: blur(10px);
   border-radius: 10px;
   height: 100%;
-  border: 2px solid white;
-
+  border: 1px solid rgba(208, 17, 68, 0.4);
 }
 
 .project-card:hover {
@@ -53,32 +60,53 @@
 /* Content */
 .project-content {
   padding: 18px;
-  color: white;
+  color: black;
 }
 
 .project-content h5 {
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 6px;
+  text-align: center;
+  color: rgb(14, 14, 14);
 }
 
 .project-content p {
   font-size: 14px;
-  color: white;
+  color: rgb(42, 42, 42);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
-/* Tech Tags */
-.project-tags span {
-  display: inline-block;
-  font-size: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  color: rgb(228, 228, 228);
-  border: #cecece 1px solid;
-  padding: 4px 10px;
-  border-radius: 999px;
-  margin: 4px 4px 0 0;
-  font-weight: 600;
+.modal-content {
+  background: linear-gradient(135deg,
+      rgba(226, 115, 163, 0.6),
+      rgba(255, 255, 255, 0.85));
 }
+
+
+/* Tech Tags */
+.project-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tags span {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(62, 62, 62);
+  border: #cecece 1px solid;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.project-tags span:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.1);
+}
+
 
 /*BUTTON*/
 .project-overlay {
@@ -92,9 +120,7 @@
 .project-btn {
   padding: 8px 22px;
   font-size: 13px;
-  font-weight: 500;
   border-radius: 999px;
-  /* FULL pill / semi-circle look */
   transition: all 0.3s ease;
   text-decoration: none;
   border: 1px solid transparent;
@@ -102,27 +128,123 @@
 
 /* Preview button */
 .btn-light.btn-sm {
-  background-color: #ffffff;
-  color: #020617;
+  background-color: #ffbacc;
+  color: black;
   border-radius: 15px;
+      border: 1px solid rgb(110, 110, 110);
+
 }
 
 .btn-light .btn-sm:hover {
-  background-color: #e5e7eb;
+  background-color: white;
   transform: translateY(-2px);
+  color: black;
 }
 
 /* GitHub outline button */
 .btn-outline-light.btn-sm {
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: white;
+    border: 1px solid rgb(110, 110, 110);
   border-radius: 15px;
 
 }
 
 .btn-outline-light .btn-sm:hover {
-  background-color: #ffffff;
-  color: #020617;
+  background-color: #ffbacc;
+  color: black;
   transform: translateY(-2px);
+}
+
+.projects {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+@keyframes floatSlow {
+
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(-18px) translateX(10px);
+  }
+}
+
+.doodle-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.doodle {
+  position: absolute;
+  opacity: 0.6;
+  filter: blur(0.3px);
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+/* SPLASH BLOBS */
+.blob {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, #f1f1f1, #d14268);
+  border-radius: 60% 40% 50% 50%;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.06);
+}
+
+.blob-1 {
+  top: 10%;
+  left: -80px;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  bottom: 30%;
+  right: -40px;
+  animation-delay: 3s;
+}
+
+.blob-3 {
+  bottom: 25%;
+  left: -70px;
+  animation-delay: 5s;
+}
+
+.blob-4 {
+  bottom: -5%;
+  right: -10px;
+  animation-delay: 7s;
+}
+
+
+/*floatt*/
+.blob-1 {
+  top: 10%;
+  left: -80px;
+  animation-name: floatMorphA;
+}
+
+.blob-2 {
+  bottom: 30%;
+  right: -40px;
+  animation-name: floatMorphB;
+}
+
+.blob-3 {
+  bottom: 25%;
+  left: -70px;
+  animation-name: floatMorphA;
+  animation-delay: 3s;
+}
+
+.blob-4 {
+  bottom: -5%;
+  right: -10px;
+  animation-name: floatMorphB;
+  animation-delay: 5s;
 }
