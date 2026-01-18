@@ -1,4 +1,4 @@
-/* Responsive Styling */
+/*1. NAVBAR MQ STYLE*/
 @media (max-width: 991px) {
     .navbar-collapse {
         background: transparent;
@@ -20,40 +20,7 @@
     }
 }
 
-@media (max-width: 768px) {
-    .media-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .media-icons a {
-        font-size: 18px;
-        width: 20px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* Additional Adjustments for Smaller Screens */
-@media (max-width: 425px) {
-    .media-icons {
-        gap: 5px;
-    }
-
-    .media-icons a {
-        font-size: 19px;
-        width: 30px;
-        height: 30px;
-    }
-}
-
-
+/*TEXT ANIMATIONS FOR MAIN*/
 @keyframes dropFromTop {
     0% {
         transform: translateY(-100px);
@@ -66,7 +33,6 @@
     }
 }
 
-/*text animations*/
 @keyframes text-move {
 
     0%,
@@ -94,174 +60,231 @@
     }
 }
 
-
-
-
-
-/* Medium screens: 361px - 768px (tablets or larger phones) */
-@media (min-width: 361px) and (max-width: 768px) {
-
-
-    .card-title {
-        font-size: 13px;
-    }
-
-    .card-text {
-        font-size: 11px;
-        line-height: 1.3;
-    }
-}
-
-/* Large screens: 769px and up (desktops) */
-@media (min-width: 320px) {
-    .skill-icon {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 10px;
-    }
-
-    .skills-card {
-        height: 200px;
-    }
-
-    .card-title {
-        font-size: 16px;
-    }
-
-    .card-text {
-        font-size: 10px;
-        line-height: 1.4;
-    }
-}
-
-
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .card-container {
-        justify-content: center;
-    }
-
-    .card-container .card {
-        width: 100%;
-        margin-bottom: 10%;
-        gap: 2px;
-    }
-}
-
-
-
-/* Responsive Design */
+/*2. INDEX SECTION STYLE MQ*/
+/* MAIN SECTION RESPONSIVE TABLET */
 @media (max-width: 991px) {
-    .navbar-nav {
-        text-align: center;
-        width: 100%;
-        font-size: 15px;
+    section {
+        padding: 70px 80px;
     }
 
-    .navbar-nav .nav-link {
-        display: block;
-        width: 100%;
-
+    .main-section {
+        padding: 60px 50px;
     }
 
+    .profile-img {
+        margin-left: 0;
+        width: 75%;
+        max-width: 320px;
+    }
+
+    .button {
+        margin-left: 0;
+        width: auto;
+        padding: 10px 15px;
+    }
 }
 
-@media (max-width: 768px) {
+/* MAIN SCETION MOBILE STYLE MQ */
+@media (max-width: 576px) {
     section {
         padding: 50px 20px;
     }
 
-    .profile-img {
-        width: 100%;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    .main-section {
+        padding: 40px 25px;
+        border-radius: 18px;
     }
 
-    .about .img-card img {
-        max-width: 100%;
-        height: auto;
+    .content {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 85%;
+        max-width: 260px;
         margin: 0 auto;
+    }
+
+    .resume {
+        display: flex;
+        justify-content: center;
     }
 
     .button {
         width: 100%;
+        max-width: 100px;
         margin-left: 0;
-        text-align: center;
-    }
-
-    .hire-btn {
-        width: 50%;
-        text-align: center;
-        font-size: 11px;
     }
 }
 
+/* TEXT ANIMATION  */
+.animated-text h3 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: text-move 6s infinite;
+}
 
+.animated-text h3:nth-child(1) {
+    animation-delay: 0s;
+}
 
-@media (max-width: 375px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 9px;
+.animated-text h3:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.animated-text h3:nth-child(3) {
+    animation-delay: 4s;
+}
+
+@keyframes text-move {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
     }
 
-    .main .content h2 {
-        font-size: 1.1rem;
+    10% {
+        opacity: 1;
+        transform: translateY(0);
     }
 
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    40% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@media (max-width: 576px) {
     .animated-text h3 {
-        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* BLOB RESPONSIVE*/
+.doodle-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.doodle.blob {
+    width: clamp(90px, 22vw, 250px);
+    height: clamp(100px, 22vw, 230px);
+}
+
+@media (max-width: 991px) {
+    .doodle.blob {
+        opacity: 0.18;
+        animation-duration: 18s;
+    }
+}
+
+@media (max-width: 576px) {
+    .doodle.blob {
+        width: 140px;
+        height: 140px;
+        opacity: 0.12;
+        animation-duration: 22s;
+    }
+}
+
+.doodle.blob {
+    position: absolute;
+    animation: blobFloat 14s ease-in-out infinite;
+}
+
+@keyframes blobFloat {
+    0% {
+        transform: translate(0, 0);
     }
 
-    .footer p {
-        font-size: 8px;
+    50% {
+        transform: translate(60px, -60px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+/*3. ABOUT SECTION STYLE MQ*/
+/* TABLET SCREEN */
+@media (max-width: 991.98px) {
+    .about .content-title {
+        font-size: 1.4rem; 
     }
 
     .paragraph-text {
-        flex-grow: 1;
-        text-align: justify;
-        word-spacing: 1px;
-        font-size: 15px;
+        font-size: 15px; 
+        line-height: 1.6;
     }
 
-    .certs .card-title {
-        font-size: 9px;
+    .about-actions a {
+        font-size: 12px; 
+        padding: 8px 20px;
+    }
+}
+
+/* MOBILE SCREEN*/
+@media (max-width: 575.98px) {
+    .about .content-title {
+        font-size: 1.2rem;
     }
 
-    .certs .card-text {
-        font-size: 7px;
+    .paragraph-text {
+        font-size: 17px;
+        line-height: 1.5;
     }
 
-    .certs .cert-card {
+    .about-actions a {
+        font-size: 13px;
+        padding: 6px 18px;
+    }
+}
+
+/* Tablet: medium screens */
+@media (max-width: 991.98px) {
+    .about .img-card img.profile-img {
+        max-width: 220px;   /* smaller image */
         width: 100%;
-    }
-
-}
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-    .card-text {
-        font-size: 8px;
-    }
-
-    .card-title {
-        font-size: 10px;
-    }
-
-    .modal-title {
-        font-size: 14px;
-        text-align: center;
+        margin: 0 auto;
     }
 }
 
-
-/* Desktop: Standard sizing */
-@media screen and (min-width: 1025px) {
-    .card {
-        width: 15rem;
+/* Mobile: small screens */
+@media (max-width: 575.98px) {
+    .about .img-card img.profile-img {
+        max-width: 150px;  /* even smaller */
+        width: 100%;
+        margin: 0 auto;
     }
 }
+
+/*4. CERTS SECTION STYLE MQ*/
+/*MOBILE*/
+@media (max-width: 575.98px) {
+    #achievements .row > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .cert-card {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

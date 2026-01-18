@@ -1,0 +1,128 @@
+/*SKILLS SECTION STYLE*/
+#skills {
+    background-color: #ffbacc;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card {
+    background: #d14268;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border: #cecece 1px solid;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+.skill-card img {
+    width: 42px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.skill-card:hover img {
+    transform: scale(1.2) rotateZ(10deg);
+}
+
+.skill-card h6 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 13px;
+    color: #cbd5f5;
+    line-height: 1.5;
+}
+
+.skill-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.skill-tags span {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(228, 228, 228);
+    border: #cecece 1px solid;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.skill-tags span:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+.paragraph-text {
+    line-height: 1.8;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+/* SPLASH BLOBS */
+.doodle-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.doodle {
+  position: absolute;
+  opacity: 0.6;
+  filter: blur(0.3px);
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+.blob {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, #f1f1f1, #d14268);
+  border-radius: 60% 40% 50% 50%;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.06);
+}
+
+.blob-1 {
+  top: 20%;
+  left: -110px;
+  animation-name: floatMorphA;
+}
+
+.blob-2 {
+  bottom: 30%;
+  right: -100px;
+  animation-name: floatMorphB;
+}
+
+.blob-3 {
+  bottom: -15%;
+  left: -70px;
+  animation-name: floatMorphA;
+  animation-delay: 3s;
+}
+
+.blob-4 {
+  bottom: -5%;
+  right: -10px;
+  animation-name: floatMorphB;
+  animation-delay: 5s;
+}

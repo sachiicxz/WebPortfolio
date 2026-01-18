@@ -1,0 +1,327 @@
+/*MAIN SECTION STYLE*/
+.main-section {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 100px;
+}
+
+.profile-img {
+    width: 80%;
+    max-width: 400px;
+    cursor: pointer;
+    margin-left: 20%;
+    border-radius: 16px;
+}
+
+section .paragraph-text {
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    background-color: #ffbacc;
+}
+
+.main .content h2 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main .content h2 span {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #d14268;
+    font-family: cursive;
+}
+
+.animated-text {
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.animated-text h3 {
+    color: black;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 1px;
+}
+
+.animated-text h3:nth-child(1) {
+    animation: text-move 6s infinite ease-out;
+}
+
+.button {
+    padding: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #cd466a;
+    border-radius: 20px;
+    margin-left: 15%;
+    width: 110%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: transparent;
+    transform: translateY(-3px);
+    color: black;
+    border: 1px solid rgb(110, 110, 110);
+    box-shadow: 0 8px 20px rgba(209, 66, 104, 0.45);
+
+}
+
+/*ABOUT SECTION STYLE*/
+.about {
+    padding: 75px 0;
+    background-color: #f1f1f1b7;
+}
+
+.img-card img {
+    width: 100%;
+    height: auto;
+}
+
+.img-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.dots-bg {
+    position: absolute;
+    inset: -50%;
+    z-index: 0;
+    pointer-events: none;
+
+    background: radial-gradient(circle,
+           #cd466a 3px,
+            transparent 2px);
+    background-size: 48px 48px;
+
+    animation: floatBackground 15s linear infinite;
+    filter: blur(1px);
+    opacity: 0.85;
+}
+
+.profile-img {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes floatBackground {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(180px, 180px, 0);
+    }
+}
+
+.highlight-name {
+    color: #d14268;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.paragraph-text {
+    line-height: 1.8;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about-actions a {
+    padding: 10px 26px;
+    border-radius: 25px;
+    font-size: 13px;
+    min-width: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    background: transparent;
+    color: black;
+    border: 1px solid rgb(110, 110, 110);
+}
+
+.btn-outline:hover {
+    background: #d14268;
+    color: white;
+    transform: translateY(-2px);
+    border-color: #d14268;
+    box-shadow: 0 8px 20px rgba(209, 66, 104, 0.45);
+}
+
+.btn-primary {
+    background: #d14268;
+    color: white;
+    border: 1px solid #d14268;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border: 1px solid rgb(110, 110, 110);
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(209, 66, 104, 0.45);
+}
+
+/*CERTIFICATES SECTION STYLE*/
+.certs {
+    background-color: #ffbacc;
+    padding: 80px 0;
+}
+
+.col-md-3:nth-child(even) .cert-card {
+    animation-name: cardFloatReverse;
+}
+
+@keyframes cardFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes cardFloatReverse {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+.text-small {
+    font-size: 13px;
+}
+
+.certs .modal-content {
+    background: linear-gradient(135deg,
+            rgba(226, 115, 163, 0.6),
+            rgba(255, 255, 255, 0.85));
+}
+
+.code {
+    text-decoration: none;
+    text-align: center;
+}
+
+.certs .btn-close {
+    color: black;
+}
+
+.cert-card {
+    position: relative;
+    background: black 1PX;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    margin-top: 50px;
+    animation: cardFloat 6s ease-in-out infinite;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+}
+
+.cert-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.cert-card::after {
+    content: "Click to view";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 6, 23, 0.7);
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.3s ease;
+    border-radius: 12px;
+}
+
+.cert-card:hover::after {
+    opacity: 1;
+}
+
+.certs .modal-title {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+
+/* SPLASH BLOBS */
+.doodle-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.doodle {
+  position: absolute;
+  opacity: 0.6;
+  filter: blur(0.3px);
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+.blob {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, #f1f1f1, #d14268);
+  border-radius: 60% 40% 50% 50%;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.06);
+}
+
+.blob-1 {
+  top: 45%;
+  left: -100px;
+  animation-name: floatMorphA;
+}
+
+.blob-2 {
+  bottom: 30%;
+  right: -50px;
+  animation-name: floatMorphB;
+}
+
+.blob-4 {
+  bottom: 10%;
+  right: -150px;
+  animation-name: floatMorphB;
+  animation-delay: 5s;
+}

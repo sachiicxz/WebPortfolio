@@ -1,0 +1,90 @@
+/*NAVBAR STYLE*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 16px 24px;
+    background: #fff;
+    height: 80px;
+}
+
+.navbar-brand h5 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+}
+
+.navbar-brand span {
+    color: #d14268;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 600;
+    color: #000 !important;
+    text-transform: uppercase;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d14268 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #d14268;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.custom-toggler {
+    width: 36px;
+    height: 26px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.custom-toggler .bar {
+    height: 3px;
+    width: 100%;
+    background: #000;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+}
+
+.custom-toggler.active .top-bar {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.custom-toggler.active .middle-bar {
+    opacity: 0;
+}
+
+.custom-toggler.active .bottom-bar {
+    transform: rotate(-45deg) translate(6px, -6px);
+}

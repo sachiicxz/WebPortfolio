@@ -77,6 +77,13 @@
 
 }
 
+.paragraph-text {
+    line-height: 1.8;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
 .modal-content {
   background: linear-gradient(135deg,
       rgba(226, 115, 163, 0.6),
@@ -174,6 +181,7 @@
   }
 }
 
+/* SPLASH BLOBS */
 .doodle-bg {
   position: absolute;
   inset: 0;
@@ -188,7 +196,6 @@
   animation: floatSlow 10s ease-in-out infinite;
 }
 
-/* SPLASH BLOBS */
 .blob {
   width: 220px;
   height: 220px;
@@ -197,32 +204,6 @@
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.06);
 }
 
-.blob-1 {
-  top: 10%;
-  left: -80px;
-  animation-delay: 0s;
-}
-
-.blob-2 {
-  bottom: 30%;
-  right: -40px;
-  animation-delay: 3s;
-}
-
-.blob-3 {
-  bottom: 25%;
-  left: -70px;
-  animation-delay: 5s;
-}
-
-.blob-4 {
-  bottom: -5%;
-  right: -10px;
-  animation-delay: 7s;
-}
-
-
-/*floatt*/
 .blob-1 {
   top: 10%;
   left: -80px;

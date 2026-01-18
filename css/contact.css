@@ -1,0 +1,186 @@
+/*CONTACT SECTION STYLE*/
+.contact {
+    background-color: #ffbacc;
+    min-height: 490px;
+}
+
+.contact {
+    padding: 80px 0;
+}
+
+.contact-line {
+    height: 3px;
+    background-color: black;
+    width: 65px;
+    margin-bottom: 15px;
+}
+
+.contact-desc {
+    color: black;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    height: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    color: black;
+}
+
+.contact-info h3 {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 24px;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(32, 32, 32);
+}
+
+.contact-details i {
+    font-size: 16px;
+}
+
+.contact-details a {
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(14px);
+    padding: 32px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.form-floating .form-control {
+    background: transparent;
+    color: rgb(75, 75, 75);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 13px;
+    border: 1px solid rgb(110, 110, 110);
+
+}
+
+.form-floating .form-control:focus {
+    background-color: transparent;
+}
+
+.form-floating>label,
+.form-floating>label::after,
+.form-floating textarea~label {
+    background: transparent !important;
+    color: rgb(32, 32, 32);
+}
+
+.form-control::placeholder {
+    color: transparent;
+}
+
+.contact-btn {
+    margin-top: 12px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid rgb(110, 110, 110);
+    background: transparent;
+    color: rgb(32, 32, 32);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease;
+    font-size: 11px;
+}
+
+.contact-btn:hover {
+    background: #d14268;
+    border: 1px solid rgb(110, 110, 110);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(209, 66, 104, 0.45);
+
+}
+
+.contact-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.glass-toast {
+    border-radius: 15px;
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
+
+
+
+/* SPLASH BLOBS */
+.doodle-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.doodle {
+  position: absolute;
+  opacity: 0.6;
+  filter: blur(0.3px);
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+.blob {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, #f1f1f1, #d14268);
+  border-radius: 60% 40% 50% 50%;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.06);
+}
+
+.blob-1 {
+  top: 50%;
+  left: -120px;
+  animation-name: floatMorphA;
+}
+
+.blob-2 {
+  bottom: 40%;
+  right: -120px;
+  animation-name: floatMorphB;
+}
+
+
