@@ -255,24 +255,6 @@
     }
 }
 
-/* Tablet: medium screens */
-@media (max-width: 991.98px) {
-    .about .img-card img.profile-img {
-        max-width: 220px;   /* smaller image */
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-/* Mobile: small screens */
-@media (max-width: 575.98px) {
-    .about .img-card img.profile-img {
-        max-width: 150px;  /* even smaller */
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
 /*4. CERTS SECTION STYLE MQ*/
 /*MOBILE*/
 @media (max-width: 575.98px) {
@@ -288,3 +270,119 @@
     }
 }
 
+/*5. SKILLS SCTION STYLE MQ*/
+/* MOBILE */
+@media (max-width: 767px) {
+  #skills {
+    padding: 60px 20px;
+  }
+
+  .skill-card {
+    padding: 32px 24px;
+    min-height: 300px;
+  }
+
+  .skill-card img {
+    width: 54px;
+    margin-bottom: 18px;
+  }
+
+  .skill-card h6 {
+    font-size: 16px;
+  }
+
+  .skill-card p {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 991px) {
+  #skills {
+    padding: 80px 40px;
+  }
+
+  .skill-card {
+    padding: 30px 26px;
+    min-height: 320px;
+  }
+
+  .skill-card img {
+    width: 56px;
+    margin-bottom: 18px;
+  }
+
+  .skill-card h6 {
+    font-size: 16px;
+  }
+
+  .skill-card p {
+    font-size: 14px;
+      margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/*6. FOOTER SECTION STYLE MQ*/
+/*TABLET VIEW */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-contact,
+    .footer-links,
+    .footer-brand {
+        align-items: center;
+    }
+
+    .media-icons {
+        justify-content: center;
+    }
+}
+
+/*7. NAVR BAR MQ*/
+@media (min-width: 1025px) {
+    .nav-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-icon {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-nav {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-icon {
+        display: inline-block;
+        font-size: 16px;
+        min-width: 20px;
+    }
+}

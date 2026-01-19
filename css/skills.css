@@ -74,8 +74,8 @@
 .paragraph-text {
     line-height: 1.8;
     font-size: 17px;
+    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: justify;
 }
 
 /* SPLASH BLOBS */
